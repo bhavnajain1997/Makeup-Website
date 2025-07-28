@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Manufacturing+Consent&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500 !important;
+}
+.bevan, .title{
+      font-family: "Bevan", serif !important;
+        font-weight: 400;
+
+}
+.radient{
+  font-family: "Marck Script", cursive !important;
+
+}
+.footer ul li a, .footer p{
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.footer ul li{
+  padding-bottom: 10px;
+}
