@@ -4,7 +4,7 @@ import Face from "./Face";
 import Eyes from "./Eyes";
 import Lips from "./Lips";
 import SearchPage from "./SearchPage";
-
+import Cart from "./Cart";
 
 const Body = () => {
     const appRouter = createBrowserRouter([
@@ -27,6 +27,10 @@ const Body = () => {
         {
             path : "/lips",
             element : <Lips/>
+        },
+        {
+            path : "/cart",
+            element : <Cart/>
         }
 
     ])

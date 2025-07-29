@@ -8,19 +8,22 @@ import AboutSkin from "./AboutSkin"
 import useLipstick from "../hooks/useLipstick"
 import useEyes from "../hooks/useEyes"
 import useFace from "../hooks/useFace"
+import { useRef } from "react"
   const Home = () => {
             useLipstick("maybelline");
     useEyes("maybelline");
     useFace("maybelline");
+     const newRef = useRef();
+  const bestRef = useRef();
 
     return(
         <div>
-            <Header/>
+            <Header newRef={newRef} bestRef={bestRef}/>
             <MainBackground/>
-            <ProductList/>
+            <div ref={newRef}><ProductList/></div>
             <LipsSec/>
-            <Trending/>
-            <AboutSkin/>
+            <div ref={bestRef}><Trending/></div>
+          <AboutSkin/>
             <Footer/>
         </div>
     )

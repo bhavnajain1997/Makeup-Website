@@ -1,4 +1,8 @@
+import { useDispatch } from "react-redux";
+import { addCartList } from "../utilis/cartSlice";
+
 const ProductCard = (props) => {
+    const dispatch = useDispatch();
     const {productItem} = props;
     if (!productItem){
         return null
@@ -9,14 +13,18 @@ const ProductCard = (props) => {
       price,
       rating 
     } = productItem;
+    const handleAddClickBtn = () => {
+        dispatch(addCartList(productItem))
+        console.log(addCartList())
+    }
     return (
-        <div className="text-center border p-4">
+        <div className="text-center border p-4 procard">
 
             <img className="m-auto" src= {`${productItem.image_link}`} alt="productimage"/>
             <h4>{name}</h4>
             <p>{price}</p>
             <p>{rating}</p>
-            <button className="border 1px solid black p-2 ">Add to Cart</button>
+            <button className="border 1px solid black p-2 btnCart" onClick={handleAddClickBtn}>Add to Cart</button>
         </div>
     )
 }

@@ -1,7 +1,9 @@
-import { useNavigate } from "react-router-dom";
-import { act, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { act, useRef, useState } from "react";
+import { useSelector } from "react-redux";
 
- const Header = () => {
+ const Header = ({newRef,bestRef}) => {
+   const cartItems = useSelector(store => store.cart.cartList)
   const [activeTab, setActiveTab] = useState("");
 
 
@@ -26,8 +28,12 @@ import { act, useState } from "react";
      }
   }
 
-  
-        console.log(activeTab)
+  const handleScrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+      //   console.log(activeTab)
 
     return(
         <div className="" style={{backgroundColor: "#916751"}}>
@@ -35,12 +41,12 @@ import { act, useState } from "react";
             <div className=" p-6 text-white shadow-xl" style={{backgroundColor: "rgb(99, 65, 65)", display: "flex", justifyContent: "space-between"}}>
                 <div className="" >
                    <ul className="flex flex-row" style={{display: "flex", gap: "80px"}}>
-                    <li><a href="" className="text-white">Shop All</a></li>
-                    <li><a href="">New</a></li>
-                    <li><a href="">Best Sellers</a></li>
-                    <li onClick={()=> handleClickPro("face")}><a href="" >Face</a></li>
-                    <li onClick={() => handleClickPro("lips")}><a href="">Lips</a></li>
-                    <li onClick={() => handleClickPro("eyes")}><a href="">Eyes</a></li>
+                    <li ><Link>Shop All</Link></li>
+                    <li><Link onClick={() => handleScrollToSection(newRef)}>New</Link></li>
+                    <li><Link onClick={() => handleScrollToSection(bestRef)}>Best Sellers</Link></li>
+                    <li onClick={()=> handleClickPro("face")}>Face</li>
+                    <li onClick={() => handleClickPro("lips")}>Lips</li>
+                    <li onClick={() => handleClickPro("eyes")}>Eyes</li>
                    </ul>
                 </div>
                 <div>
@@ -48,7 +54,7 @@ import { act, useState } from "react";
                           <div className="search" onClick={handleSearchBtn}><i className="fa-solid fa-magnifying-glass text-white"></i></div>
 
                     {/* <li><a href=""><i className="fa-solid fa-circle-user"></i> Log In</a></li> */}
-                    <li><a href=""><i className="fa-solid fa-cart-shopping"></i></a></li>
+                    <li ><Link to="/cart"><i className="fa-solid fa-cart-shopping"> {cartItems?.length ?? 0}</i></Link></li>
                   </ul>
                 </div>
             </div>

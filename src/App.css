@@ -22,3 +22,18 @@ body{
 .footer ul li{
   padding-bottom: 10px;
 }
+.procard{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btnCart{
+  cursor: pointer;
+  background-color: rgb(99, 55, 65);
+  color: white;
+
+}
+.btnCart:hover{
+background-color: white;
+color: rgb(99, 55, 65);
+}
