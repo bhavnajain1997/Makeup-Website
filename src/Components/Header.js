@@ -12,6 +12,9 @@ import { useSelector } from "react-redux";
   const handleSearchBtn = () => {
          Navigate("/search")
   }
+  const handleHomeBtn = () => {
+     Navigate("/home")
+  }
   const handleClickPro = (tab ) => {
     setActiveTab(tab)
      if(tab === "face" ){
@@ -41,7 +44,7 @@ import { useSelector } from "react-redux";
             <div className=" p-6 text-white shadow-xl" style={{backgroundColor: "rgb(99, 65, 65)", display: "flex", justifyContent: "space-between"}}>
                 <div className="" >
                    <ul className="flex flex-row" style={{display: "flex", gap: "80px"}}>
-                    <li ><Link>Shop All</Link></li>
+                    <li ><Link onClick={handleHomeBtn}>Home</Link></li>
                     <li><Link onClick={() => handleScrollToSection(newRef)}>New</Link></li>
                     <li><Link onClick={() => handleScrollToSection(bestRef)}>Best Sellers</Link></li>
                     <li onClick={()=> handleClickPro("face")}>Face</li>

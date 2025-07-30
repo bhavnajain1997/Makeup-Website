@@ -5,12 +5,12 @@ import Eyes from "./Eyes";
 import Lips from "./Lips";
 import SearchPage from "./SearchPage";
 import Cart from "./Cart";
-
 const Body = () => {
+    
     const appRouter = createBrowserRouter([
         {
             path : "/",
-            element : <Home/>
+            element : <Home  />
         },
         {
             path : "/search",
