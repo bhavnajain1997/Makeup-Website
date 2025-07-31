@@ -26,7 +26,7 @@ const SearchPage = () => {
                 <input type="text" placeholder="Search "   size={window.innerWidth < 640 ? 30 : 70}
  className="p-2 border border-white m-2.5" value={searchText} onChange={handleChangeMakeup}/>
             </div>
-            <div className="grid  md:grid-cols-4 sm:grid-cols-2 max-w-[1200px] gap-4 m-auto">
+            <div className="grid  md:grid-cols-4 sm:grid-cols-2 max-w-[1200px] gap-4 m-auto p-10 my-10">
                    {(searchText ? filterListMakeup : makeupPro).map((product)=><ProductCard key = {product.id} productItem = {product}/>)}
             </div>
             <div >

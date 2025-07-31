@@ -15,7 +15,7 @@ const Eyes = () => {
         <div>
         <div><Header/></div>
 
-      <div className="grid  md:grid-cols-4 sm:grid-cols-2 max-w-[1200px] gap-4 m-auto">
+      <div className="grid  md:grid-cols-4 sm:grid-cols-2 max-w-[1200px] gap-4 m-auto p-10">
          {eyesList && eyesList.map((item) => <ProductCard key = {item.id} productItem = {item}/>)}
       </div>
       </div>
