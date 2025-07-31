@@ -11,6 +11,41 @@ body{
         font-weight: 400;
 
 }
+.bevan{
+  position: absolute !important;
+  top: 35% !important;
+  left: 31% !important;
+      font-family: "Bevan", serif !important;
+}
+@media  (max-width: 767px){
+  .bevan{
+      top: 25% !important;
+     left: 25% !important;
+
+  }
+  .menuBar{
+    display : block !important;
+  }
+  .menuList{
+    background-color: rgb(145, 103, 81);
+    color: #fff;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    top: 0px;
+    height: 100%;
+    padding: 30px 170px 0px 10px;
+  }
+  .menuList li{
+    padding: 10px 0px;
+  }
+  .menuDesk{
+    display: none !important;
+  }
+}
+.menuBar{
+  display: none;
+}
 .radient{
   font-family: "Marck Script", cursive !important;
 

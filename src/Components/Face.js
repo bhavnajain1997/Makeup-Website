@@ -12,7 +12,7 @@ const Face = () => {
         <div>
         <div><Header/></div>
 
-        <div className="grid  grid-cols-4 max-w-[1200px] gap-4 m-auto py-12">
+        <div className="grid  md:grid-cols-4 sm:grid-cols-2 max-w-[1200px] gap-4 m-auto">
             {faceList && faceList.map((item)=> <ProductCard key = {item.id} productItem = {item}/>)}
         </div>
         </div>

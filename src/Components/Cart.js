@@ -16,7 +16,7 @@ const Cart = () => {
                 { cartItems.length === 0 &&
                     <h1>Cart is empty . Add Items to the Cart.</h1>
                 }
-                <div className="grid  grid-cols-4 max-w-[1200px] gap-4 m-auto">
+                <div className="grid  md:grid-cols-4 sm:grid-cols-2 max-w-[1200px] gap-4 m-auto">
                                {cartItems && cartItems.map((item) => (
               <ProductCard key={item.id} productItem={item} />
             ))}

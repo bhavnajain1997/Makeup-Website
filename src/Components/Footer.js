@@ -1,9 +1,9 @@
 const Footer = () => {
     return (
-        <div className="flex justify-evenly bg-black text-white p-8 footer">
+        <div className="flex md:flex-row flex-col md:gap-0 gap-y-2.5 justify-evenly bg-black text-white p-8 footer">
             <div >
             <h4 className="text-[25px] pb-6">Shop</h4>
-                <ul className="">
+                <ul className="flex md:flex-col flex-row md:gap-0 gap-x-[20px] md:flex-nowrap flex-wrap">
                     <li><a href="" className="">All Products</a></li>
                     <li><a href="">New</a></li>
                     <li><a href="">Best Sellers</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
             <div>
                 <h4 className="text-[25px] pb-6">Policy</h4>
-                <ul>
+                <ul className="flex md:flex-col flex-row md:gap-0 gap-x-[20px] md:flex-nowrap flex-wrap">
                     <li><a href="">Shipping & Returns</a></li>
                     <li><a href="">Store Policy</a></li>
                     <li><a href="">Payment Methods</a></li>
