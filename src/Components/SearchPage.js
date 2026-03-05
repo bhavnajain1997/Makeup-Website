@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 import Header from "./Header";
 import { useState } from "react";
 const SearchPage = () => {
-    const [searchText, setSearchText] = useState("");
+    const [searchText, setSearchText] = useState();
     const [filterListMakeup, setFilterListMakeup] = useState([]);
     const eyes = useSelector((store) => store.makeup.eyes);
     const face = useSelector((store) => store.makeup.face);
