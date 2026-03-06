@@ -29915,24 +29915,42 @@ const Header = ({ newRef, bestRef })=>{
                                                 columnNumber: 13
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                onClick: ()=>handleClickPro("face"),
-                                                children: "Face"
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    onClick: ()=>handleClickPro("face"),
+                                                    children: "Face"
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Header.js",
+                                                    lineNumber: 57,
+                                                    columnNumber: 17
+                                                }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.js",
                                                 lineNumber: 57,
                                                 columnNumber: 13
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                onClick: ()=>handleClickPro("lips"),
-                                                children: "Lips"
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    onClick: ()=>handleClickPro("lips"),
+                                                    children: "Lips"
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Header.js",
+                                                    lineNumber: 58,
+                                                    columnNumber: 17
+                                                }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.js",
                                                 lineNumber: 58,
                                                 columnNumber: 13
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                onClick: ()=>handleClickPro("eyes"),
-                                                children: "Eyes"
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    onClick: ()=>handleClickPro("eyes"),
+                                                    children: "Eyes"
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Header.js",
+                                                    lineNumber: 59,
+                                                    columnNumber: 17
+                                                }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.js",
                                                 lineNumber: 59,

@@ -23,16 +23,16 @@ The project displays different makeup products and provides a clean user interfa
 ![Home](./Screenshots/home.png)
 
 ### best seller section
-![best seller section](./Screenshots/Screenshot 2026-03-06 000502.png)
+![bestsellersection](./Screenshots/Screenshot%202026-03-06%20000502.png)
 
 ### face page
-![face](./Screenshots/Screenshot 2026-03-06 000658.png)
+![face](./Screenshots/Screenshot%202026-03-06%20000658.png)
 
 ### search page
-![search](./Screenshots/Screenshot 2026-03-06 005407.png)
+![search](./Screenshots/Screenshot%202026-03-06%20000735.png)
 
 ### mobile home responsive page
-![mobilehomepage](./Screenshots/Screenshot 2026-03-06 005604.png)
+![mobilehomepage](./Screenshots/Screenshot%202026-03-06%20005604.png)
 
 ### mobile side navigation bar
 ![navigationbar](./Screenshots/Screenshot%202026-03-06%20010142.png)

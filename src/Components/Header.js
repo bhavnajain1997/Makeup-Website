@@ -54,9 +54,9 @@ const Header = ({ newRef, bestRef }) => {
             <li ><Link onClick={handleHomeBtn}>Home</Link></li>
             <li><Link onClick={() => handleScrollToSection(newRef)}>New</Link></li>
             <li><Link onClick={() => handleScrollToSection(bestRef)}>Best Sellers</Link></li>
-            <li onClick={() => handleClickPro("face")}>Face</li>
-            <li onClick={() => handleClickPro("lips")}>Lips</li>
-            <li onClick={() => handleClickPro("eyes")}>Eyes</li>
+            <li><Link onClick={() => handleClickPro("face")}>Face</Link></li>
+            <li><Link onClick={() => handleClickPro("lips")}>Lips</Link></li>
+            <li><Link onClick={() => handleClickPro("eyes")}>Eyes</Link></li>
           </ul>
           }
           </div>
