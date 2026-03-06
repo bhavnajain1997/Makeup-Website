@@ -2,15 +2,19 @@
   "name": "makeuppro",
   "version": "1.0.0",
   "description": "Makeup Pro",
+  "homepage": "https://bhavnajain1997.github.io/Makeup-Website",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.15.4",
     "tailwindcss": "^4.1.11"
   },
