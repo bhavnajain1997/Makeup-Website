@@ -12,6 +12,7 @@ The project displays different makeup products and provides a clean user interfa
 
 ## 🛠️ Technologies Used
 - React JS
+- Redux
 - JavaScript
 - HTML5
 - CSS3
