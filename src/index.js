@@ -1,14 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import { HashRouter } from "react-router-dom";  
-import AppLayout from "./App";
+import AppLayout from "./App"; // Isme aapka Redux Provider aur Body component hai
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <>
-   <React.StrictMode>
-      <AppLayout />
+  <React.StrictMode>
+    <AppLayout />
   </React.StrictMode>
-  </>
-  
 );
