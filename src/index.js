@@ -4,7 +4,5 @@ import AppLayout from "./App"; // Isme aapka Redux Provider aur Body component h
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
     <AppLayout />
-  </React.StrictMode>
 );

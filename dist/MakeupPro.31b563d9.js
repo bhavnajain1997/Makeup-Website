@@ -680,20 +680,13 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-// import { HashRouter } from "react-router-dom";  
-var _app = require("./App");
+var _app = require("./App"); // Isme aapka Redux Provider aur Body component hai
 var _appDefault = parcelHelpers.interopDefault(_app);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).StrictMode, {
-    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
-        fileName: "src/index.js",
-        lineNumber: 9,
-        columnNumber: 7
-    }, undefined)
-}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
     fileName: "src/index.js",
-    lineNumber: 8,
-    columnNumber: 3
+    lineNumber: 7,
+    columnNumber: 5
 }, undefined));
 
   $parcel$ReactRefreshHelpers$3cdc.postlude(module);
