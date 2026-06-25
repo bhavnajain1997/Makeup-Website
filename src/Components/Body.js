@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
 import Face from "./Face";
 import Eyes from "./Eyes";
@@ -7,7 +7,7 @@ import SearchPage from "./SearchPage";
 import Cart from "./Cart";
 const Body = () => {
     
-    const appRouter = createBrowserRouter([
+    const appRouter = createHashRouter([
         {
             path : "/",
             element : <Home  />
